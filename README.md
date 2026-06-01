@@ -1,6 +1,6 @@
 #MiPrimerProyectoEnSeudoCodigo
-Empecé a estudiar programación, estoy muy emocionado, les comparto un poco de lo aprendido el día de hoy en PSeInt.
-Es una mezcla de los conceptos básicos de programación, como variables, declaración de variables, y por último utilizamos las condicionales Si / SiNo
+//Empecé a estudiar programación, estoy muy emocionado, les comparto un poco de lo aprendido el día de hoy en PSeInt.
+//Es una mezcla de los conceptos básicos de programación, como variables, declaración de variables, y por último utilizamos las condicionales Si / SiNo
 
 Algoritmo CondicionalSi_Sino
 	Definir Num1, Num2, Resultado Como Real
