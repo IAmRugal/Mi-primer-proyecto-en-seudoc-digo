@@ -1,0 +1,37 @@
+//Este programa fue mi complejo para mi, se utilizan muchas herramientas, donde el usuario ingresa las notas de algunos alumnos, el sistema identifica, cuál es la nota mayor, menor, el promedio, y el número de estudiantes que reprobaron y pasaron.
+Algoritmo AnalisisCalificaciones
+	Definir N, i, calificacion, suma, aprobados, reprobados Como Entero
+	Definir promedio, maximo, minimo Como Real
+	Escribir "Ingrese la cantidad de estudiantes:"
+	Leer N
+	suma <- 0
+	aprobados <- 0
+	reprobados <- 0
+	Para i <- 1 Hasta N Con Paso 1 Hacer
+		Escribir "Ingrese la calificación del estudiante ", i, ":"
+		Leer calificacion
+		suma <- suma + calificacion
+		Si calificacion >= 60 Entonces
+			aprobados <- aprobados + 1
+		Sino
+			reprobados <- reprobados + 1
+		FinSi
+		Si i = 1 Entonces
+			maximo <- calificacion
+			minimo <- calificacion
+		Sino
+			Si calificacion > maximo Entonces
+				maximo <- calificacion
+			FinSi
+			Si calificacion < minimo Entonces
+				minimo <- calificacion
+			FinSi
+		FinSi
+	FinPara
+	promedio <- suma / N
+	Escribir "Calificación promedio: ", promedio
+	Escribir "Cantidad de estudiantes que aprobaron: ", aprobados
+	Escribir "Cantidad de estudiantes que reprobaron: ", reprobados
+	Escribir "Calificación más alta: ", maximo
+	Escribir "Calificación más baja: ", minimo
+FinAlgoritmo
