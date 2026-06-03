@@ -1,0 +1,22 @@
+//Interesante como se puede agregar un vector, y consultar cuál es el número mayo y dónde se encontró.
+
+Algoritmo EncontrarMayorVector
+	Dimension Numeros[5]
+	Definir Mayor Como Entero
+	Definir Posicion Como Entero
+	Mayor = -123
+	Numeros[1] = 10
+	Numeros[2] = 100
+	Numeros[3] = 1000
+	Numeros[4] = 10000
+	Numeros[5] = 123
+	
+	Para i = 1 Hasta 5 Con Paso 1 Hacer
+		Si (Numeros[i] > Mayor) Entonces
+			Mayor = Numeros[i]
+			Posicion = i
+		FinSi
+	FinPara
+	
+	Escribir "El mayor número es el: ",Mayor," y lo encontré en la posición ", Posicion
+FinAlgoritmo
